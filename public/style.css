@@ -1,0 +1,56 @@
+button {
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    
+	padding: 3%;
+	background: #43D1AF;
+	border-bottom: 2px solid #30C29E;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+    color: #fff;
+    flex:1;
+}
+input {
+    flex:3;
+
+    padding-top: 0;
+   padding-left: 0;
+}
+button:hover{
+    background: #2EBC99;
+}
+
+#flexline {
+    display:flex;
+
+    bottom: 0;
+    flex-direction: row;
+ 
+    position: absolute;
+    width: 100%;
+}
+
+
+.message{
+    border:1px solid black;
+}
+#wrapper{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px;
+    display:flex;
+    flex-direction: column;
+    
+}
+.message-wrapper {
+    max-height: 86vh;
+    overflow-y: scroll;
+}
+* {
+    margin: 0;
+    transition: all 0.5s;
+
+}
