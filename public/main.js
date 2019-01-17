@@ -4,12 +4,19 @@
  */
 let socket = io();
 
+
+
+
+socket.on('message', (msg) => {
+    console.log(msg);
+    addMessage(msg);
+});
+
 document.addEventListener('keydown', (ev) => {
     if(ev.keyCode === 13){
         sendMessage();
     }
 });
-
 
 const sendMessage = () => {
     const input = document.getElementById('input')
@@ -20,11 +27,6 @@ const sendMessage = () => {
     socket.emit('message', msg);
     input.value = "";
 }:
-
-socket.on('message', (msg) => {
-    console.log(msg);
-    addMessage(msg);
-});
 
 const addMessage = (msg) => {
     const msgs = document.getElementById('messages');
