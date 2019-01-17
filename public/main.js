@@ -38,12 +38,8 @@ const addMessage = (msg) => {
     const newMessage = document.createElement('div');
     
     newMessage.setAttribute('class','message')
-    const text = document.createTextNode(msg.message)
     newMessage.innerHTML = msg.message;
-
     msgs.appendChild(newMessage);
     
-   
-  
 }
 
