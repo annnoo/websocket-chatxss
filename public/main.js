@@ -2,7 +2,7 @@
 /**
  * @type {SocketIO}
  */
-var socket = io();
+let socket = io();
 
 document.addEventListener('keydown', (ev) => {
     if(ev.keyCode === 13){
