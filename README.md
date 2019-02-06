@@ -1,3 +1,3 @@
-## XSS anfälliger WebSocket Cat
+## XSS vulnerable WebSocket Chat
 
-- Gehostete Version: https://websocket-xss.herokuapp.com/
+- Hosted version: https://websocket-xss.herokuapp.com/
